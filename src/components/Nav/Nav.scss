@@ -1,0 +1,21 @@
+@import '../../styles/_vars.scss';
+
+.nav-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    font-size: 1.25em;
+    max-width: 1600px;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    ul {
+        flex: 0 1 50%;
+        border-bottom: $border;
+    }
+    li a {
+        padding: 0.5rem 1rem;
+    }
+}

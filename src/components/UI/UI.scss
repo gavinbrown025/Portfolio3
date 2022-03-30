@@ -1,0 +1,79 @@
+@import '../../styles/_vars.scss';
+
+.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 5rem;
+}
+@media (max-width: 48rem) {
+	.container {
+		padding: 0 2rem;
+	}
+}
+@media (max-width: 30rem) {
+	.container {
+		padding: 0 1rem;
+	}
+}
+
+button {
+	position: relative;
+	min-width: 200px;
+	padding: 0.75rem 1rem;
+
+	font-size: 1.2em;
+	font-family: $main-font;
+	text-transform: uppercase;
+	font-weight: $fw-reg;
+	text-align: center;
+
+	color: $font-color;
+	background: transparent;
+	border: $border;
+	transition: all 300ms ease;
+	.lines {
+		position: absolute;
+		top: -16px;
+		left: 1rem;
+		width: 1rem;
+		height: 2rem;
+		border-right: $border;
+		border-left: $border;
+		transition: all 500ms ease;
+	}
+	&:hover,
+	&:focus {
+		outline: none;
+		background: $lowlight;
+		color: $dk-grey;
+		.lines {
+			top: 10px;
+			width: calc(100% - 2rem);
+		}
+	}
+}
+
+.logo {
+	display: inline-block;
+	height: 3rem;
+	svg {
+		height: 100%;
+        path {
+            fill: none;
+            stroke: #fff;
+            stroke-width:3px;
+            stroke-miterlimit:10;
+        }
+	}
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+

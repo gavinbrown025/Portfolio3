@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+
+// ______Colors______
+
+// Greyscale
+$white: #fff;
+$off-white: #d2d2d2;
+$dk-grey: #29292e;
+$black: #000;
+
+// Custom
+$tan: #d7d998;
+$lt-purple: #aaaad4;
+$purple: #1a1a30;
+$dk-purple: #141425;
+
+// Defaults
+$highlight: $tan;
+$lowlight: $lt-purple;
+$midtone: $purple;
+$darktone: $dk-purple;
+
+// ______Font______
+$font-color: $white;
+$main-font: 'Oswald', Helvetica, Arial, sans-serif;
+
+$font-base: 1rem;
+
+$header-xl:5em;
+$header-lg:4em;
+$header-med:3em;
+$header-sm:2rem;
+
+$copy-med: 1.375em;
+
+$fw-lt: 200;
+$fw-reg: 300;
+
+// General
+
+$bg: $dk-purple;
+$bg-gradient: radial-gradient(circle, $purple 50%, $dk-purple 100%);
+$bg-gradient-trans: radial-gradient(circle, rgba($purple, .9) 50%, rgba($dk-purple, 0.9) 100%);
+$border: 1px solid $white;
+
