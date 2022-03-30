@@ -1,0 +1,25 @@
+@import '../../styles/_vars.scss';
+
+.profile-desc{
+    flex: 1 1 35%;
+}
+
+.profile-skills{
+    background: $bg;
+    padding: 2rem 3rem;
+    flex: 1 1 35%;
+    h3{
+        margin-bottom: 1.5rem;
+    }
+    ul {
+        display: flex;
+        margin-bottom: 2rem;
+        &:last-of-type{
+            margin-bottom: 1rem;
+        }
+        &>*{
+            margin-right: 1rem;
+            white-space: nowrap;
+        }
+    }
+}

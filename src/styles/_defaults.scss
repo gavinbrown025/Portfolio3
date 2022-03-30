@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	position: relative;
+	background: $bg fixed;
+	background: $bg-gradient fixed;
+
+	font-family: $main-font;
+	font-size: 1rem;
+	color: $font-color;
+	font-weight: $fw-lt;
+	line-height: 1.2;
+
+	min-width: 300px;
+	@media screen and (max-width: 768px) {
+		font-size: 0.9rem;
+	}
+	&::-webkit-scrollbar {
+		width: 0.5rem;
+		padding-right: 4px;
+	}
+	&::-webkit-scrollbar-track {
+		background: #000000e1;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 0;
+		border: none;
+		&:hover {
+			background-color: rgba(0, 0, 0, 0);
+		}
+	}
+	.c-scrollbar_thumb {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background: $white;
+		opacity: 0.5;
+		width: 1px;
+		border-radius: 10px;
+		margin: 4px;
+		height: 100vh;
+	}
+}
+
+main {
+	position: relative;
+	//height: 100vh;
+	// overflow-y: scroll;
+	// scroll-snap-type: y mandatory;
+}
+
+section,
+header {
+	//scroll-snap-align: start;
+	min-height: 100vh;
+	padding: 5rem 0;
+	display: flex;
+	align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: $fw-lt;
+	font-size: $header-sm;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: $header-xl;
+}
+h2 {
+	font-size: $header-lg;
+}
+
+p,
+li,
+span {
+	font-size: $copy-med;
+	color: $off-white;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: $fw-reg;
+}
+
+.hidden {
+	display: none;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.text-dim {
+	color: $off-white;
+}
+.text-pop {
+	color: $highlight;
+}
+
+.flex {
+	display: flex;
+	&.row {
+		flex-direction: row;
+	}
+	&.column {
+		flex-direction: column;
+	}
+	&.aic {
+		align-items: center;
+	}
+	&.aisb {
+		align-items: space-between;
+	}
+	&.aife {
+		align-items: flex-end;
+	}
+	&.aifs {
+		align-items: flex-start;
+	}
+	&.jcc {
+		justify-content: center;
+	}
+	&.jcsb {
+		justify-content: space-between;
+	}
+	&.jcfe {
+		justify-content: flex-end;
+	}
+	&.jcfs {
+		justify-content: flex-start;
+	}
+	&.fw {
+		flex-wrap: wrap;
+	}
+}
+
+.gap1 {
+	gap: 1rem;
+}
+.gap2 {
+	gap: 2rem;
+}
+.gap3 {
+	gap: 3rem;
+}
+
+.mb1 {
+	margin-bottom: 1rem;
+}
+.mb2 {
+	margin-bottom: 2rem;
+}
+.mb3 {
+	margin-bottom: 3rem;
+}
